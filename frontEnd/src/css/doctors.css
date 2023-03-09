@@ -1,0 +1,8 @@
+.doctor-description {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0 1rem;
+}

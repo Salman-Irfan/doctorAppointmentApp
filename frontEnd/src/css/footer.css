@@ -1,0 +1,12 @@
+
+.blue-hover {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+
+.blue-hover:hover {
+    text-decoration: underline !important;
+    color: #6c757d !important;
+    transition: all 0.1s ease-in-out !important;
+}

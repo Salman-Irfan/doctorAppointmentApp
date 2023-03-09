@@ -1,0 +1,39 @@
+form {
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+input[type="submit"]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+}
