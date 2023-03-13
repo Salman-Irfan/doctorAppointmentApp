@@ -2,8 +2,10 @@ import React from 'react'
 
 const MakeAnAppointment = () => {
     return (
-        <div>MakeAnAppointment</div>
-    )
+        <>
+            <h1>MakeAnAppointment</h1>
+        </>
+    );
 }
 
 export default MakeAnAppointment

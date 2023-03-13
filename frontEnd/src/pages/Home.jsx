@@ -1,5 +1,4 @@
 import React from 'react'
-import { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -42,7 +41,7 @@ const Home = () => {
                 >
                     <SwiperSlide className='hiding'>
                         <div className="card bg-dark text-success mb-4">
-                            <img className="card-img background-image" src={logo} alt="Card image" />
+                            <img className="card-img background-image" src={logo} alt="Cardimage" />
                             <div className="card-img-overlay overlay text-center d-flex flex-column justify-content-center">
                                 <h5 className="card-title text-white bg-success">Ibrahim, Afzal Clinic</h5>
                                 <ul className="list-unstyled mb-0">
@@ -68,7 +67,7 @@ const Home = () => {
                     <SwiperSlide className='hiding'>
                         <div className="row featurette">
                             <div className="col-md-5 order-md-1">
-                                <img src={ibrahim} className="img-fluid mb-3" />
+                                <img src={ibrahim} className="img-fluid mb-3" alt="ibrahim" />
                             </div>
                             <div className="col-md-7 order-md-2 d-flex flex-column justify-content-center">
                                 <h2 className="featurette-heading fw-normal lh-1 mb-3">Ibrahim, Afzal Clinic </h2>
@@ -95,7 +94,7 @@ const Home = () => {
                     <SwiperSlide className='hiding'>
                         <div className="row featurette">
                             <div className="col-md-5 order-md-1">
-                                <img src={ahmad} className="img-fluid mb-3" />
+                                <img src={ahmad} className="img-fluid mb-3" alt="ahmad"/>
                             </div>
                             <div className="col-md-7 order-md-2 d-flex flex-column justify-content-center">
                                 <h2 className="featurette-heading fw-normal lh-1 mb-3">Ibrahim, Afzal Clinic </h2>

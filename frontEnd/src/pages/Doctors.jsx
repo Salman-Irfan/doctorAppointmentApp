@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import logo from "../assets/images/logo.png";
 import ibrahim from "../assets/images/ibrahim.png";
 import ahmad from "../assets/images/ahmad.png";
 

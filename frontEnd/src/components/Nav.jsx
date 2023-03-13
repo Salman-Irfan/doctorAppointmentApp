@@ -33,7 +33,7 @@ const Nav = () => {
               <NavLink className="nav-link blink" to="/appointment">Make an Appointment</NavLink>
             </li>
             <li className="nav-item h5 ms-5 ">
-              <NavLink className="nav-link text-white bg-primary  btn btn-primary rounded-pill py-1 px-7" to="/auth/login">
+              <NavLink className="nav-link text-white bg-primary  btn btn-primary rounded-pill py-1 px-7" to="/login">
                 <i className="bi bi-fingerprint me-2"></i>
                 Login / Reg
               </NavLink>
