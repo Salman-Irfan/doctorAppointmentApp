@@ -1,12 +1,35 @@
 import React from "react";
-import { Form, Input } from "antd";
+import { Form, Input, message } from "antd";
 import "../css/login.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-    // form handler
-    const onFinishHandler = (values) => {
-        console.log(values);
+    const navigate = useNavigate();
+
+    const onFinishHandler = async (values) => {
+        try {
+            const response = await fetch(
+                "http://127.0.0.1:4000/api/v1/user/login",
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(values),
+                }
+            );
+            const data = await response.json();
+
+            if (data.success) {
+                localStorage.setItem("token", data.token);
+                navigate("/dashboard");
+                message.success("Login successfully");
+                navigate("/");
+            } else {
+                message.error(data.message);
+            }
+        } catch (error) {
+            console.log(error);
+            message.error(error.message);
+        }
     };
 
     const onButtonClickHandler = (event) => {
